@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+header img {
+  width: 200px;
+}
+
+nav a {
+  margin-right: 20px;
+}
+
+.hero {
+  background-image: url('./images/hero.jpg');
+  height: 100vh;
+  background-size: cover;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.hero-subtitle {
+  font-size: 25px;
+}
+
+.hero-link {
+  background-color: #ffffffb8;
+  background-size: 20px;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.discovery {
+  text-align: center;
+  padding: 50px;
+}
+
+.discovery-titles {
+  width: 61%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.discovery-title {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+
+hr {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.discovery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.discovery-grid div {
+  width: 100%;
+  height: 300px;
+}
+
+.discovery-grid1 {
+  background-image: url('./images/itacare-01.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-basis: 35%;
+}
+
+.discovery-grid2 {
+  background-image: url('./images/itacare-02.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-basis: 55%;
+}
+
+.discovery-grid3 {
+  background-image: url('./images/itacare-03.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-basis: 55%;
+}
+
+.discovery-grid4 {
+  background-image: url('./images/itacare-04.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-basis: 35%;
+}
+
+.information {
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+}
+.information-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.info-tab-icons i {
+  font-size: 1.5rem;
+}
+.info-tab-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.info-tab li {
+  margin-bottom: 20px;
+}
+.info-tab i, .info-tab h3 {
+  color: #c3c63b;
+}
+
+.newsletter {
+  text-align: center;
+  padding: 30px 20px;
+  color: #c3c63b;
+}
+.newsletter-forms {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter-forms input {
+  padding: 10px;
+  width: 55%;
+  border: 1px solid #c3c63b;
+}
+
+.newsletter-forms button {
+  background-color: #c3c63b;
+    padding: 10px;
+    border: 1px solid #c3c63b;
+    border-radius: 5px;
+    color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 20px;
+}
+
+.direitos {
+  margin-top: 20px;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    display: none;
+  }
+
+  header img {
+    width: 300px;
+  }
+
+  .hero {
+    text-align: center;
+    gap: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .discovery {
+    padding: 30px 10px;
+  }
+
+  .discovery-titles {
+    width: 80%;
+  }
+
+  .discovery-grid {
+    display: block;
+  }
+  .discovery-grid div {
+    margin-bottom: 20px;
+  }
+  footer i {
+    font-size: 1.5rem;
+    color: #c3c63b;
+  }
+  .footer-redes-sociais {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .btn-whats {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) { 
+  .information {
+    padding: 50px;
+  }
+}
