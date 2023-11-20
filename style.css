@@ -185,6 +185,10 @@ footer {
   color: white;
   padding: 30px 20px;
 }
+footer i {
+  font-size: 1.5rem;
+  color: #c3c63b;
+}
 
 .direitos {
   margin-top: 20px;
@@ -221,10 +225,7 @@ footer {
   .discovery-grid div {
     margin-bottom: 20px;
   }
-  footer i {
-    font-size: 1.5rem;
-    color: #c3c63b;
-  }
+ 
   .footer-redes-sociais {
     display: flex;
     justify-content: space-evenly;
