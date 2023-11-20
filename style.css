@@ -1,17 +1,11 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Open Sans, sans-serif;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -19,224 +13,197 @@ a {
   color: black;
 }
 
-ul {
-  list-style: none;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
 }
 
-header img {
-  width: 200px;
+.nav-container img {
+  width: 20%;
 }
 
-nav a {
+.nav-container-menu a {
   margin-right: 20px;
 }
 
-.hero {
+.hero-container {
   background-image: url('./images/hero.jpg');
   height: 100vh;
   background-size: cover;
   color: white;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-}
-
-.hero-title {
-  font-size: 50px;
-  font-weight: 500;
-}
-
-.hero-subtitle {
-  font-size: 25px;
-}
-
-.hero-link {
-  background-color: #ffffffb8;
-  background-size: 20px;
-  margin-top: 20px;
-  padding: 20px 50px;
-  border-radius: 8px;
-  text-transform: uppercase;
-}
-
-.discovery {
-  text-align: center;
-  padding: 50px;
-}
-
-.discovery-titles {
-  width: 61%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.discovery-title {
-  font-size: 25px;
-  margin-bottom: 30px;
-}
-
-
-hr {
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.discovery-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
 }
 
-.discovery-grid div {
-  width: 100%;
-  height: 300px;
+.hero-container-title {
+  font-size: 60px;
+  font-weight: 500;
 }
 
-.discovery-grid1 {
-  background-image: url('./images/itacare-01.jpg');
-  background-size: cover;
-  background-position: center;
-  flex-basis: 35%;
+.hero-container-subtitle {
+  font-size: 40px;
+  font-weight: 400;
 }
 
-.discovery-grid2 {
-  background-image: url('./images/itacare-02.jpg');
-  background-size: cover;
-  background-position: center;
-  flex-basis: 55%;
+.hero-container-link {
+  background-color: rgba(255, 255, 255, 0.659);
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-transform: uppercase;
 }
 
-.discovery-grid3 {
-  background-image: url('./images/itacare-03.jpg');
-  background-size: cover;
-  background-position: center;
-  flex-basis: 55%;
-}
-
-.discovery-grid4 {
-  background-image: url('./images/itacare-04.jpg');
-  background-size: cover;
-  background-position: center;
-  flex-basis: 35%;
-}
-
-.information {
-  background-color: black;
-  color: white;
-  padding: 30px 20px;
-}
-.information-title {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-.info-tab-icons i {
-  font-size: 1.5rem;
-}
-.info-tab-icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.info-tab li {
-  margin-bottom: 20px;
-}
-.info-tab i, .info-tab h3 {
-  color: #c3c63b;
-}
-
-.newsletter {
-  text-align: center;
-  padding: 30px 20px;
-  color: #c3c63b;
-}
-.newsletter-forms {
+.fotos-hotel-container-titles {
   display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 40px;
+    padding: 40px;
 }
 
-.newsletter-forms input {
+hr {
+  border: 1px solid;
+  width: 20%;
+  margin: 0 auto;
+}
+.fotos-hotel-container-title {
+  font-weight: 400;
+  font-size: 30px;
+}
+.fotos-hotel-container-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.fotos-hotel-container-grid div {
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.fotos-hotel-container-img1 {
+  background-image: url('./images/itacare-01.jpg');
+  flex-basis: 35%;
+
+}
+
+.fotos-hotel-container-img2 {
+  background-image: url('./images/itacare-02.jpg');
+  flex-basis: 55%;
+}
+
+.fotos-hotel-container-img3 {
+  background-image: url('./images/itacare-03.jpg');
+  flex-basis: 55%;
+}
+
+.fotos-hotel-container-img4 {
+  background-image: url('./images/itacare-04.jpg');
+  flex-basis: 35%;
+}
+
+.fotos-hotel-container {
+  padding-bottom: 40px;
+}
+
+
+.more-info-container {
+  background-color: black;
+  color: white;
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.more-info-container-subtitle {
+  margin: 20px;
+}
+
+.more-info-container-list {
+  list-style: none;
+}
+
+.more-info-container-list i {
+  font-size: 3rem;
+  color: #c3c63b;
+}
+.more-info-container-list li {
+  margin: 40px 0;
+}
+.more-info-container-list h3 {
+  margin: 30px 0;
+  color: #c3c63b;
+
+}
+
+.newsletter-container {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.newsletter-container input {
   padding: 10px;
-  width: 55%;
-  border: 1px solid #c3c63b;
-}
-
-.newsletter-forms button {
-  background-color: #c3c63b;
-    padding: 10px;
     border: 1px solid #c3c63b;
-    border-radius: 5px;
+}
+.newsletter-container button {
+  padding: 10px;
+    background-color: #c3c63b;
+    border: 1px solid #c3c63b;
     color: white;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  padding: 30px 20px;
+.footer-redes-sociais  {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
 }
-footer i {
-  font-size: 1.5rem;
+.footer-redes-sociais i {
   color: #c3c63b;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px){
+ nav {
+  display: none;
+ }
+ .hero-container {
+  background-position: bottom;
+  text-align: center;
+ }
+ .hero-container-link {
+  margin-top: 50px;
+ }
+ .nav-container img {
+  width: 60%;
+}
+.hero-container-title {
+  font-size: 2.5rem;
+}
+.hero-container-subtitle {
+  font-size: 1.5rem;
+}
+.fotos-hotel-container-img1, 
+.fotos-hotel-container-img2 ,
+ .fotos-hotel-container-img3, 
+ .fotos-hotel-container-img4{
+  flex-basis: 80%;
+}
 }
 
-.direitos {
-  margin-top: 20px;
-}
-@media screen and (max-width: 480px) {
-  nav {
-    display: none;
-  }
 
-  header img {
-    width: 300px;
+@media screen and (min-width: 910px){
+  .more-info-container-list {
+    display: flex;
   }
-
-  .hero {
-    text-align: center;
-    gap: 50px;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .discovery {
-    padding: 30px 10px;
-  }
-
-  .discovery-titles {
-    width: 80%;
-  }
-
-  .discovery-grid {
-    display: block;
-  }
-  .discovery-grid div {
+  .footer-redes-sociais { 
     margin-bottom: 20px;
   }
- 
-  .footer-redes-sociais {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .btn-whats {
-    display: none;
-  }
+  .more-info-container-list li {
+    width: 35%;
 }
-
-@media screen and (min-width: 900px) { 
-  .information {
-    padding: 50px;
-  }
 }
