@@ -206,4 +206,7 @@ hr {
   .more-info-container-list li {
     width: 35%;
 }
+footer {
+  text-align: center;
+}
 }
